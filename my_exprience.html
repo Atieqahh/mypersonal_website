@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Experience</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+	<style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: lightskyblue;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: lightskyblue;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 1em;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: lightskyblue;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .experience-item {
+            flex-basis: 30%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        .experience-item h2 {
+            margin-bottom: 10px;
+        }
+
+        .map-container {
+            height: 200px;
+            margin-top: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: lightskyblue;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+    </style>
+
+</head>
+<body>
+	<nav class="navbar">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="my_biodata.html">Biodata</a></li>
+			<li><a href="my_exprience.html">Experience</a></li>
+			<li><a href="my_education.html">Education</a></li>
+			<li><a href="my_family.html">Family</a></li>
+			<li><a href="my_gallery.html">Gallery</a></li>
+			<li><a href="my_contact.html">Contact</a></li>	
+		</ul>
+	</nav>
+
+	<section class="main-content">
+        <h2>Work Experience</h2>
+
+        <div class="experience">
+            <div class="experience-item">
+                <h2>Cashier</h2>
+                <p>Nasi Lemak Ejam Ayer Keroh</p>
+                <p>Medan Seler Ayer Keroh</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.74223518238!2d102.2915812!3d2.2500291999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1e57cd65ef253%3A0xc1d998572db00a87!2sNasi%20Lemak%20Ejam%20Ayer%20Keroh!5e0!3m2!1sms!2smy!4v1703611429691!5m2!1sms!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="experience-item">
+                <h2>Operator </h2>
+                <p>Leaderart Industries (M) Sdn.Bhd</p>
+                <p>Tampoi</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.438458208028!2d103.7241128!3d1.5069243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da728363bdf1b3%3A0x73eb71ced362e04c!2sLeaderart%20Industries%20(M)%20Sdn.%20Bhd.!5e0!3m2!1sms!2smy!4v1703611945545!5m2!1sms!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="experience-item">
+                <h2>Bakers</h2>
+                <p>Ezza Cookies</p>
+                <p>Kampung Permatang Rambai</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.042445175427!2d102.3329375!3d5.8496431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b6972d3e7274b3%3A0x9e3b141224fc5f58!2sEZZA%20COOKIES!5e0!3m2!1sms!2smy!4v1703611960528!5m2!1sms!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMaps" async defer></script>
+
+    <script>
+        function initMaps() {
+            
+            var map1 = new google.maps.Map(document.getElementById('map1'), {
+                center: { lat: 37.7749, lng: -122.4194 },
+                zoom: 12
+            });
+
+            
+            var map2 = new google.maps.Map(document.getElementById('map2'), {
+                center: { lat: 40.7128, lng: -74.0060 },
+                zoom: 12
+            });
+
+            
+            var map3 = new google.maps.Map(document.getElementById('map3'), {
+                center: { lat: 34.0522, lng: -118.2437 },
+                zoom: 12
+            });
+        }
+    </script>
+
+</body>
+</html>
